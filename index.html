@@ -12,6 +12,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <style media="screen">
+            .carousel-cell {
+                width: 100%;
+                height: auto;
+            }
+            .carousel-cell::before {
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -47,18 +58,127 @@
             </ul>
             </nav>
         </header>
-        <audio>
-            <embed src="bgm/bgm.mp3" autostart="true" loop="true" width="2" height="0" type="music/mp3">
+        <section class="home">
+
+            <div>
+                <img src="logos/esports.png" alt="Ivyklix logo" id="homelogo">
+            </div>
+            <h1>Join IvyKlix today &amp; become a IvyKlixer!</h1>
+            <div>
+                <a href="#" class="button">Join Us!</a>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div id="rectangle">
+            <div style="text-align: center;">About Us</div>
+            <p>We are a company that welcomes all gamers across the world to join and become a part of a revolution in gaming world.</p>
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+            <div class="carousel-cell">
+            <img src="img/games/CSGO.jpg" alt="cs:go">
+            </div>
+            <div class="carousel-cell">
+            <img src="img/games/dota2.jpg" alt="Dota 2">
+            </div>
+            <div class="carousel-cell">
+            <img src="img/games/fifa.jpg" alt="fifa">
+            </div>
+            <div class="carousel-cell">
+            <img src="img/games/leagueoflegends.jpg" alt="league of legends">
+            </div>
+            <div class="carousel-cell">
+            <img src="img/games/rainbox6seige.jpg" alt="rainbox six: seige">
+            </div>
+            <div class="carousel-cell">
+            <img src="img/games/valo.png" alt="valorant img">
+            </div>
+        </div>
+        </div>
+        </section>
+        <section>
+            <h1>Shop</h1>
+            <div class="gear">
+            <h3>Gear</h3>
+            <img src="img/gears/keyboard.jpeg" alt="keyboard">
+            <img src="img/gears/controllers1.jpeg" alt="controller">
+            <img src="img/gears/arvrheadset.jpg" alt="ar/vr headset">
+        </div>
+        <div class="apparel">
+            <h3>Apparel</h3>
+            <img src="img/apparel/img10.jpg" alt="customized IvyKlix shirt">
+            <img src="img/apparel/img1.jpg" alt="tracksuit for women">
+            <img src="img/apparel/img2.jpg" alt="tracksuit for all">
+        </div>
+        </section>
+        <section>
+        <audio controls>
+            <source src="bgm/bgm.mp3" autostart="true" loop="true">
         </audio>
+    </section>
         <section>
             <div>
             </div>
         </section>
-        <section class="foooter">
-            <footer>
-                <div></div>
-            </footer>
-        </section>
+        <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div>
+            <h3>DOST</h3>
+            <p>
+              IvyKlix HQ <br>
+              New Delhi<br>
+              India <br><br>
+              <strong>Phone:</strong> 011-24685969<br>
+              <strong>Email:</strong> info@dost.com<br>
+            </p>
+          </div>
+
+          <div>
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Join Our Newsletter</h4>
+            <p>You can join our Newsletter for getting updates about the upcoming matches and following the journey of IvyKlixers.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>IvyKlix</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABpUlEQVRIS+2W4TVEQQyF71ZAB3SACtABFbAVoAJUgA6oABWgg9UBHdCB8zmZPWM2MxPrHe/P5hx/TJKb3Nzk7UQj2WQkXK2A/435Iahel3Qi6VjSpqQ3SbeSbiR9WCf8H+Pt20pgktxLOsyCWixsm39KnPumAg4MB9+5lcA4ATyTtB8Ax2+rM593YwO351rHF5LO7ZGkUyvCy52K7OkCumlwL89V6zhPRjF3+XzsMS+yBf5ZgtZmzGzWnEwPJppXKyIKfCkJ3x/mqfpU0lWPPwP3RFWGhoBZCcSCApnJEIZOWK9mx4A9DYGW5djxBOpRHVmRaG0Ii9uwYB4wNLNvnsCigMnvURJrFwLGCdGgxKPfIhX+HKH50cjfareaKrm/fxHYSyu+BsxcavscJcEVVQpufZ2YNUdjI4qU+Z1Jum7FRT6L7DaUR+fNeSWmaT1gKAcQoblrUWQPgRKTA5M4feJQNV0isggg+8qpXbhQtbbLjgGju90eVfYOIGDEpF8bodAa1XTMnBAYHadC+DIBgOIRHn9LWW/GSyWNBK2AIywN4jMa1V9zOkUfVgRl4AAAAABJRU5ErkJggg=="/></a>
+        <a href="#" class="facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABB0lEQVRIS+2X4Q0BQRCFPx3oAB3oABUogQ7ogA60oAQdoAMqQAd0IC+5TcYkt4ncnONif93mcvNl3rzZnevQ0Oo0xOWrwH2gF6zEDbjamD5jQS/B0BRuYOEePAb2NYEnwCHF/nnwA1gDJ6PWENiYfXjGZ0AlursS+bKFg18CGnjtYOsTybsA1B1dQPu0QjM+FjKn4DtgWtIVtYLVLqPWgeXiZZGVnOxbSLXVmgOzyBr7upYddOrrVRNgb7TK5tItsy0y0a2TnpO86WaT1Gqrj7RTO11tzeSN9s/YqlPZ1e2S+t1h7x1zZYc9ySi4bfzc7Jc7q+13OnSy420OEvruq/4kQjMrC/YEj85dHzBTXL4AAAAASUVORK5CYII="/></a>
+        <a href="#" class="instagram"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB20lEQVRIS9WW3TEFQRCFvysBRIAIEAFK4RERkAEiQAZEgAjwqvxGgAy8e0AE1Kdm1Fize2fvVbX00/7MzOnTfaa7e3RkvY5w+fPAY8B0YXQegdd+a5sYTwK7wDzgcxt7Am6BfcDnH1YHPAPcADLV3oCHQmT3joa1Ml/I7c0By+4+gJ4D23VeNzjiGQfAagj7bPWMHPAxsAEIulbIMl0mwxHgCjgL4CfAZrooB2xOJoCpAZgKeh0AloHnED3P9LwvqwKb0xdAZZqrnPndiMT/5v4wOLkIXIZNK8AF8B7ex1O1V4FVsKK6C2quApu3rRqH/LcDLMFnfRBU0zGvotFQ6Z/WBjgFNWfmT1MHRkCTuWJMTbC5QYENq0rX1hPQCCD4aXipamMo4Mj2hzoTavE2VFkPBRw359hGbK/LUUYf/xO4s1B3Ji7zmF4nhZRep1gOf/06RQE1FZAcaHEBiSXTamNHyZmdxyKRlkwdyvbd0pIp0DBNoupo1Ib9PPb2bMn0YywE5tB7O4y1aouG0lA7RbjRwl8XxjqnZOrYZCmVre/fzmgafaw46QjTZvRJRybBv7pS9LTfsLcXvI4OlIZdlkbL/a2GvSqA4S+dNB3w+kbnzw/0pSEuXtcZ4w/OPpIfFE9UkgAAAABJRU5ErkJggg=="/></i></a>
+        <a href="#" class="linkedin"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABHklEQVRIS+2XjYnCQBBGXzo4K/CuArUCtQJLUCvQDtQO7ECtxOvg7EDtwA6UD3ZhWFA2Zi7JwS0IYd3M2/nmh0lBQ6toiEurwJ9A11mJK3CxNlOPBT07Q6O5LwtPwSPg+EvgMfAdbeeAJZOH9KXAc2APfITb9iqokQ2Wp4p5XDNgVwdYjA5wC7AtsKgLrGQQsA8sg+TvsrOlfhfw7L1SYB22MZ4Ch5Bw2pcSir1+p3BQeSGVJskNSoFtua2BFbAB9KwliHIg5oFlKUxDs+EKjnZVbik8rQJ3cMx2gQemLaZd0B18N3LaMGjb/ucKVnL9NAFO5azN43/w35fas1+XKqfawI0Ne7Hx28nDw2uNti/HWw9Ilo1WfUlk3bjqoQcYcXAfqieUIAAAAABJRU5ErkJggg=="/></a>
+        <a href="#" class="youtube"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABLklEQVRIS+1W7RHBQBTcVIAK6IAO0AEd6IAOUIES6AAVoAMdoAMlmM3cmeQmI3s3icuPvBlDzL63t+/jXhJEsiQSL1riv2W+cameABhn5PNZtScAfmhvAHcAN9fZVTwCcAQwUFlEHA8yN4dIXVziq6NUjCvBGHtqkVliqnxIIcJBPZP+nGLW8RIeU/KkYirPES8A7AX3s+mBoYB1IazzySXeAFgLwbYAiF2Z747gYyHWN6fYl5jBuoZ8KZJXRmz52JgHYSJqIWZ/lF00lREz1Uwzy6RYJcScgp2ps0JKTCGxOk4cB9aU16uvFc5xtAsk2pXJtNW5JLgav11ftBZZw75v8UrwLwCzX2vR+vNk2ZlkI3F0VEsXgTH+zj6nfzfu1UdVFoxrFQenztcxWqo/fjc4H8HxWlsAAAAASUVORK5CYII="/></a>
+        <a href="#" class="twitch"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABK0lEQVRIS+2W0RUBMRBFrwrQgQ7oAB3oAB1QAZ3QCTqgAi3ogPPOSZzdbLLGWtbH5nN3MnfmzWSSDg2tTkNc/g48Aro1q3EBbt5nKmMZ1A2eAscy8ALYOYNclBUV8Oq9BCuqsYPkjCuCvb9S8AC4ZgA/A0+AQwuO1PbuvmVPxRbYACdAyvllqrFV6hYsWVupv9Jc7wyxWrvaCtac1kDqAaUj03qcLOAsVJeNfCevxbrApVBFHd7HIXgFnIP0NJm0JN8wkrq+793/Qqap+zgExyRVsHKu2imz1EpCLRnHnPY/hVYFS/rKmaakloQxp3oOzSPpryM9oMCe3Zuqg/V56+dw1s/SNZHlaBVsrGCpoA6fudfnR9BYjS3RK4jwiFn25WysGb/t+NWGxsAPNRBvHyH32JkAAAAASUVORK5CYII="/></a>
+        <a href="#" class="discord"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABjElEQVRIS+2X/zEEQRCFv4uADBABMiACISADIkAEyIAMiAARHBEgAyKgvqrtqr6pvbVml7tS+p+9vZnp1+/1j92dsCCbLAiXpQNeB9YGqvEOPM7z0cb4FDgZCBrH74HdNl8lsEyfRwINN4fAVemzBN4B7kYGPgNUccb+gbukvgVeAPe8NbpZE6bGCj4AVlrSVC11OBVUQK/ZVoGtZs1c7hXr1cCXwFHPgmvrimrgjRaWXXHcFKyrgF8BWYTF75BbmTeBh7RHdc7TfRXwdVM0+gkZzfN2o0Kwy0PCfE+HAh8DF6mCY6qF/AGc97n9Yyiwc9Z5GxbVm6X2v7xnFOBgYi7tX5nYz2U7uWYwPo3cqzJetaoce9De9LDmsN9PDM27AJFzA7CwVCGsGjgcyCY7zKxlawDBMq8NBi4U7n37t4GfmoHybak9YC6dRjXmIHFy5fO9pBbMArGS5xVSV0AOFCvfvg7w3sA1TMszBm8APiJ/FTgCEdxW+/Kdawy2pQ+HTPnysHxfEj/BfMbnJ+EVZx88epc8AAAAAElFTkSuQmCC"/></a>
+
+    </div>
+    </div>
+  </footer>
+
         <script>
             var icon = document.getElementById("icon");
             icon.onclick = function(){
@@ -71,5 +191,7 @@
                }
             }
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>
