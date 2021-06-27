@@ -6,6 +6,12 @@
         <link rel="icon" href="logos/esports v3.png">
         <title>IvyKlix</title>
         <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -37,6 +43,7 @@
                     </ul>
                     </li>
                     </li>
+                <img src="logos/moon.png" id="icon">
             </ul>
             </nav>
         </header>
@@ -52,5 +59,17 @@
                 <div></div>
             </footer>
         </section>
+        <script>
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+               document.body.classList.toggle("dark");
+               if(document.body.classList.contains("dark")){
+                   icon.src = "logos/sun.png";
+               }
+               else{
+                   icon.src = "logos/moon.png";
+               }
+            }
+        </script>
     </body>
 </html>

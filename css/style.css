@@ -1,0 +1,101 @@
+:root{
+    --primary-color:#ffffff;
+    --secondary-color:#000000;
+}
+/*   
+* {
+    box-sizing: border-box;
+  } */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Red Rose', cursive;
+}
+.logo img{
+    width: 5%;
+    height: auto;
+    clear: both;
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+}
+/* #icon{
+    margin-right: 10px;
+    margin-bottom: 1px;
+} */
+.navbar div{
+    display: inline;
+}
+.dark{
+    background: linear-gradient(to right, #123, #1c1817);
+    color: #ffffff;
+    }
+#icon{
+    width: 30px;
+    cursor: pointer;
+    float: right;
+    margin-top: 0.%;
+    margin-right: 1%;
+    margin-bottom: 0.2%;
+    /* padding-right: 2px; */
+    /* margin: 0px 10px 0px 0px; */
+}
+#icon:hover{
+    background-color: var(--primary-color);
+}
+a{
+    font-size: 12px;
+    text-transform: uppercase;
+} 
+
+.navbar{
+    background: #1c1817;
+    font-size: 200%;
+    font-family: 'Play', sans-serif;
+}
+
+.navbar::after{
+    content: '';
+    clear: both;
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+
+.navbar > ul > li{
+    float: left;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: block;
+}
+.navbar ul li:hover a{
+    background: rgb(255, 49, 22);
+}
+.navbar ul ul {
+    position: absolute;
+    padding: 0;
+    min-width: 150px;
+    display: none;
+    top: 100%;
+    left: 0%;
+    /* font-size: 2000%; */
+}
+.navbar ul li:hover > ul{
+    display: block;
+}
+.navbar ul ul li:hover a{
+    background: #000000;
+}
+.navbar ul ul li{
+    position: relative;
+}
+section div h1{
+    border: none 10px;
+    text-align: center;
+    font-size: 300%;
+}
