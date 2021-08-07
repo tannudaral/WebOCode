@@ -119,7 +119,7 @@ section div h1{
     height: 33%;
     padding: 2.5%;
     margin: 3% 0% 1% 0%;
-    background: #fc3301;
+    background: #123;
 }
 
 .gear h3{
@@ -147,14 +147,14 @@ section div h1{
     display: inline-block;
 }
 .button {
-    width: 12%;
-    height: 20%;
-    font-size: 150%;
+    width: 199px;
+    height: 44px;
+    font-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background-color: rgb(250, 72, 2);
+    background-color: #000;
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
@@ -162,7 +162,7 @@ section div h1{
     box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2); 
 }
 .button:hover{
-    background-color: #000;
+    background-color: rgb(250, 72, 2);
     transition: all ease 0.2s;
 }
 #footer {
@@ -328,4 +328,3 @@ section div h1{
   text-align: center;
   font-size: 140%;
 }
-  
