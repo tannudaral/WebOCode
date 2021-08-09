@@ -168,113 +168,41 @@ section div h1{
 #footer {
     color: #ffffff;
     font-size: 100%;
-    background: #000316;
-    padding: 1%;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-#footer .footer-top {
-    padding: 60px 0 30px 0;
-    background: #123;
-  }
-  
-  #footer .footer-top .footer-contact {
-    margin-bottom: 30px;
-  }
-#footer .raw{
-    display: inline-block;
-}
-  
-  #footer .footer-top .footer-contact h4 {
-    font-size: 22px;
-    margin: 0 0 30px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    font-weight: 700;
-    color: #2d405f;
-  }
-  
-  #footer .footer-top .footer-contact p {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 0;
-    font-family: "Krub", sans-serif;
-    color: #08224d;
-  }
-  
-  #footer .footer-top h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #2d405f;
-    position: relative;
-    padding-bottom: 12px;
-  }
-  
-  #footer .footer-top .footer-links {
-    margin-bottom: 30px;
-  }
-  
-  #footer .footer-top .footer-links ul {
-    list-style: none;
+    background: #123; /*2d405f*/
     padding: 0;
-    margin: 0;
-  }
-  
-  #footer .footer-top .footer-links ul i {
-    padding-right: 2px;
-    color: #6c7afa;
-    font-size: 18px;
-    line-height: 1;
-  }
-  
-  #footer .footer-top .footer-links ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  #footer .footer-top .footer-links ul li:first-child {
-    padding-top: 0;
-  }
-  
-  #footer .footer-top .footer-links ul a {
-    color: #777777;
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-  }
-  
-  #footer .footer-top .footer-links ul a:hover {
-    text-decoration: none;
-    color: #f45d01;
-  }
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
   
   #footer .footer-newsletter {
     font-size: 15px;
+    background: #2d405f;
+    padding: 2px;
   }
   
   #footer .footer-newsletter h4 {
     font-size: 16px;
     font-weight: bold;
-    color: #2d405f;
+    color: #ffffff;
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
+    text-align: center;
   }
   
   #footer .footer-newsletter form {
-    margin-top: 30px;
+    margin: 15px 0px 50px 33%;
     background: #fff;
     padding: 6px 10px;
     position: relative;
     border-radius: 5px;
+    width: 33%;
     text-align: left;
-    border: 1px solid #9da7fc;
+    border: 1px solid #000000;
   }
   
   #footer .footer-newsletter form input[type="email"] {
     border: 0;
-    padding: 4px 8px;
-    width: calc(100% - 100px);
+    padding: 4px 8px; 
+    /* width: calc(33% - 20px);  */
   }
   
   #footer .footer-newsletter form input[type="submit"] {
@@ -283,10 +211,11 @@ section div h1{
     right: -2px;
     bottom: -1px;
     border: 0;
+    padding: 2;
     background: none;
     font-size: 16px;
-    padding: 0 20px;
-    background: #f45d01;
+    padding: 0px 2px 0px 2px;
+    background: #123;
     color: #fff;
     transition: 0.3s;
     border-radius: 0 5px 5px 0;
@@ -294,14 +223,15 @@ section div h1{
   }
   
   #footer .footer-newsletter form input[type="submit"]:hover {
-    background: #f03000;
+    background: #4f6485;
+    text-align: center;
   }
   
-  #footer .credits {
+  /* #footer .credits {
     padding-top: 5px;
     font-size: 13px;
     color: #444444;
-  }
+  } */
   
   #footer .social-links a {
     font-size: 18px;
@@ -309,7 +239,7 @@ section div h1{
     background: #e7eafe;
     color: rgb(14, 51, 88);
     line-height: 1;
-    padding: 8px 0;
+    padding: 4px 0 4px;
     margin-right: 4px;
     border-radius: 5px;
     text-align: center;
@@ -319,12 +249,61 @@ section div h1{
   }
   
   #footer .social-links a:hover {
-    background: #f45d01;
-    color: #fff;
+    background: white;
+    color: rgb(220, 210, 255);
     text-decoration: none;
     box-sizing: border-box;
   }
 .about p {
   text-align: center;
-  font-size: 140%;
+  font-size: 120%;
+  padding: 0%;
+}
+
+.copyright {
+  text-align: center;
+  margin: 15px;
+}
+.social-links a{
+  display: inline-block;
+}
+.social-links .twitter{
+  margin: 10px 20px 10px 550px;
+}
+.social-links .facebook{
+  margin: 10px 20px 10px 20px;
+}
+.social-links .instagram{
+  margin: 10px 20px 10px 20px;
+}
+.social-links .linkedin{
+  margin: 10px 20px 10px 20px;
+}
+.social-links .youtube{
+  margin: 10px 20px 10px 20px;
+}
+.social-links .twitch{
+  margin: 10px 20px 10px 20px;
+}
+.social-links .discord{
+  margin: 10px 500px 10px 20px;
+}
+.links> ul > li > a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.links {
+  text-align: left;
+  margin-left: 15px;
+}
+.ivyklix {
+  text-align: left;
+  margin-left: 15px;
+  padding: 2px;
+}
+.ivyklix {
+  display: flex;
+}
+.ivyklix > p{
+  padding-left: 12px;
 }
